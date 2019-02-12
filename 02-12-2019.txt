@@ -1,0 +1,10 @@
+MORNING:
+Got started on the project. Create wireframe.
+
+Created a Homepage with a grid using html and css!
+
+Afternoon:
+continue working on project
+created an about me page using a grid with working link
+added pictures and backgrounds!
+started creating contact page by adding a pic for the background and adding contact information

@@ -1,0 +1,65 @@
+.container{
+    display: grid;
+    grid-template-areas:
+            "header header"
+            "form ."
+            "footer myInfo";
+
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid red;
+    background-image:url("software_development.jpg");
+    background-repeat: repeat;
+
+}
+
+header{
+    grid-area: header;
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+aside{
+    grid-area: form;
+    /*border: 1px solid red;*/
+    color: white;
+
+}
+
+nav{
+    grid-area: myInfo;
+    /*border: 1px solid red;*/
+    color: white;
+    font-size: 40px;
+}
+
+footer{
+    grid-area: footer;
+    /*border: 1px solid red;*/
+    color: white;
+}
+
+section{
+    grid-area: pic;
+}
+textarea{
+    height: 250px;
+    width: 350px;
+    /*color: white;*/
+
+}
+fieldset{
+    height: 250px;
+    width: 350px;
+    padding: 30px;
+}
+
+input{
+    margin-bottom: 15px;
+    margin-right: 125px;
+}
+
+a:visited{
+    background-color: red;
+}
