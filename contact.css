@@ -1,14 +1,13 @@
 .container{
     display: grid;
     grid-template-areas:
-            "header header"
-            "form ."
-            "footer myInfo";
+            "tab header header"
+            "tab form myInfo"
+            "tab footer myInfo";
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
     border: 1px solid red;
-    background-image:url("software_development.jpg");
-    background-repeat: repeat;
+    background-color: black;
 
 }
 
@@ -16,14 +15,20 @@ header{
     grid-area: header;
     /*border: 1px solid red;*/
     text-align: center;
-    font-size: 50px;
-    color: white;
+    font-size: 70px;
+    color:darkred;
+    background-color: gray;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-
+#tab{
+    grid-area: tab;
+}
 aside{
     grid-area: form;
     /*border: 1px solid red;*/
     color: white;
+    font-size: 40px;
 
 }
 
@@ -32,12 +37,14 @@ nav{
     /*border: 1px solid red;*/
     color: white;
     font-size: 40px;
+    text-align: center;
 }
 
 footer{
     grid-area: footer;
     /*border: 1px solid red;*/
     color: white;
+    margin-top: 100px;
 }
 
 section{
@@ -50,16 +57,62 @@ textarea{
 
 }
 fieldset{
-    height: 250px;
-    width: 350px;
-    padding: 30px;
+    height: 100%;
+    width: 80%;
+    /*padding: 30px;*/
 }
 
 input{
     margin-bottom: 15px;
     margin-right: 125px;
+    padding-right: 210px;
+    padding-top: 10px;
 }
 
 a:visited{
-    background-color: red;
+    color: darkred;
+}
+
+/*form{*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+/*}*/
+
+#signUpBtn{
+    opacity: 0.5;
+    height: 40px;
+    width: 110px;
+}
+
+#home{
+    /*grid-area: home;*/
+    /*border: 1px solid darkred;*/
+    text-align: center;
+    color: white;
+}
+
+#resume{
+    /*grid-area: resume;*/
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+}
+
+#reflections{
+    /*grid-area: reflections;*/
+    border-bottom: 1px solid darkred;
+    text-align: center;
+    color: white;
+}
+
+#aboutMe {
+    /*grid-area: contact;*/
+    /*border-top: 1px solid darkred;*/
+    text-align: center;
+    color: white;
+}
+#home,#resume,#reflections,#aboutMe {
+    font-size: 30px;
+    border-bottom: 1px solid darkred;
+    padding-bottom: 40px;
 }

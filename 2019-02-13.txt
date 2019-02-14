@@ -1,0 +1,13 @@
+MORNING:
+styled contact page using css
+added tab options
+added gray background to header
+made fieldset bigger and aligned
+
+on the home(index) page i added a red border line for hr effect
+added a functioning sign up button that takes you to the contact page
+
+AFTERNOON:
+Added education info
+added weekly journals for weekly reflections
+started working on resume
