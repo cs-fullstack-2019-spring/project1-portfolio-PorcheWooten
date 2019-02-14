@@ -5,38 +5,41 @@
     <title>Porche's Resume</title>
     <link rel="stylesheet" href="resume.css">
 </head>
-<body class="container">
+<body>
+<nav role="navigation">
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="aboutMe.html"><li>About Me</li></a>
+            <a href="portfolio.html"><li>Portfolio</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+</nav>
+<div class="container" >
+
 <header>Resume
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
 
-            <!--
-            Some spans to act as a hamburger.
-
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <ul id="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="aboutMe.html"><li>About Me</li></a>
-                <a href=""><li>Portfolio</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </div>
-    </nav>
 </header>
 <section>
     <strong>Skills</strong>
@@ -69,7 +72,7 @@
       <dt>Center Hill High School(Olive Branch,MS)</dt>
       <dd>Major course of study with concentration: Nursing</dd>
       <dd>Graduation Date: May 2013</dd>
-      <dt>CodeCrew Code School</dt>
+      <dt>CodeCrew Code School(Memphis,TN)</dt>
       <dd>Current student of the Beta Class. Course of study: Software Development</dd> <dd>Graduation Date: June 2019 </dd>
   </dl>
     <p><strong>Employment</strong></p>
@@ -104,5 +107,7 @@
 </aside>
 
 <footer></footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+</div>
 </body>
 </html>

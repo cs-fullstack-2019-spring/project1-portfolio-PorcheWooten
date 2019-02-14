@@ -3,3 +3,10 @@ MORNING:
 *ADDED NONFUNCTIONING BACK TO TOP BUTTON
 *RESIZED TEXT!
 DIDNT MEAN TO YELL JUST DIDNT FEEL LIKE RETYPING!!
+
+
+Afternoon:
+*added consistent toggle menu to each page
+*created portfolio added previous words
+*text resizing
+*img resizing

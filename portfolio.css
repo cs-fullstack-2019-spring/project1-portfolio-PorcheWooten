@@ -1,135 +1,183 @@
+body{
+    background-color: black;
+}
 .container{
     display: grid;
     grid-template-areas:
             "header header"
-            "form myInfo"
-            "footer myInfo";
-
-    grid-template-columns: 2fr 2fr;
-    /*border: 1px solid red;*/
+            "section article";
+            /*"article article";*/
+    grid-template-columns: 1fr 1fr;
+    border:1px solid darkred;
     background-color: black;
     margin-top: 30px;
-
 }
-
-body{
-    background-color: black;
-    /*margin-top: 0px;*/
-}
-
 header{
     grid-area: header;
-    /*border: 1px solid red;*/
     text-align: center;
     font-size: 70px;
     color:darkred;
     background-color: gray;
     padding-bottom: 50px;
     padding-top: 50px;
-
-}
-#tab{
-    grid-area: tab;
-}
-aside{
-    grid-area: form;
-    /*border: 1px solid red;*/
-    color: white;
-    font-size: 40px;
-
-}
-
-nav{
-    grid-area: myInfo;
-    /*border: 1px solid red;*/
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    /*margin-top: 60px; ;*/
-}
-.contactTxt{
-    margin-top: 80px;
-}
-
-
-footer{
-    grid-area: footer;
-    /*border: 1px solid red;*/
-    color: white;
-    margin-top: 100px;
 }
 
 section{
-    grid-area: pic;
-}
-textarea{
-    height: 250px;
-    width: 350px;
-    /*color: white;*/
-
-}
-fieldset{
-    height: 100%;
-    width: 80%;
-    margin-left: 60px;
-    margin-top: 50px;
-
-}
-
-input{
-    margin-bottom: 15px;
-    margin-right: 125px;
-    padding-right: 210px;
-    padding-top: 10px;
-}
-
-a:visited{
-    color: darkred;
-}
-
-/*form{*/
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
-/*}*/
-
-#signUpBtn{
-    opacity: 0.5;
-    height: 40px;
-    width: 110px;
-}
-
-#home{
-    /*grid-area: home;*/
-    /*border: 1px solid darkred;*/
-    text-align: center;
-    color: white;
-}
-
-#resume{
-    /*grid-area: resume;*/
-    /*border: 1px solid black;*/
-    text-align: center;
-    color: white;
-}
-
-#reflections{
-    /*grid-area: reflections;*/
-    border-bottom: 1px solid darkred;
-    text-align: center;
-    color: white;
-}
-
-#aboutMe {
-    /*grid-area: contact;*/
-    /*border-top: 1px solid darkred;*/
-    text-align: center;
-    color: white;
-}
-#home,#resume,#reflections,#aboutMe {
+    grid-area: section;
     font-size: 30px;
-    border-bottom: 1px solid darkred;
-    padding-bottom: 40px;
+    border:1px solid darkred;
+    color:white;
+    padding:60px;
+
 }
+
+article{
+    grid-area: article;
+    font-size: 30px;
+    border:1px solid darkred;
+    color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*Create Grid for the clicking game!*/
+.containerCG{
+    display: grid;
+    grid-template-areas:
+            "headerCG headerCG headerCG"
+            "sectionCG navCG articleCG"
+            "asideCG instrument color"
+            ". footer .";
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border: 1px solid darkred;*/
+    color:white;
+}
+
+#headerCG{
+    grid-area: headerCG;
+    text-align: center;
+    color:white;
+}
+
+.sectionCG{
+    grid-area: sectionCG;
+    /*border: 1px solid black;*/
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    /*padding-bottom: 10px;*/
+    color:white;
+}
+
+.navCG{
+    grid-area: navCG;
+    border-top: 1px solid gray;
+    /*border : 1px solid black;*/
+    text-align: center;
+    color:white;
+}
+
+.articleCG{
+    grid-area: articleCG;
+    /*border: 1px solid black;*/
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    text-align: center;
+    color:white;
+    padding-top: 55px;
+    padding-left: 45px;
+}
+.asideCG{
+    grid-area: asideCG;
+    text-align: right;
+    color:white;
+}
+#instrument{
+    grid-area: instrument;
+    border: 1px solid gray;
+    text-align: center;
+    color:white;
+}
+#color{
+    grid-area: color;
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    text-align: center;
+    color:white;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    color:white;
+}
+/*sets background color*/
+.bgCol1{
+    background: red ;
+}
+.bgCol2{
+    background: blue;
+}
+.bgCol3{
+    background: yellow;
+}
+
+.winning{
+    text-align: center;
+    color: white;
+}
+
+/*TIC TAC TOE GAME!!!*/
+/*player 1 score display*/
+.display{
+    text-align: center;
+    font-size:800%;
+    color:white;
+}
+/*player2 score display*/
+.display2{
+    text-align: center;
+    font-size: 800%;
+    color:white;
+}
+
+.p1Btn{
+
+}
+
+
+td{
+    /*border: 2px solid black;*/
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 85px;
+    color:white;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+.vertical{
+    border-left: 1px solid gold;
+    border-right: 1px solid gold;
+    color:white;
+}
+
+.horizontal{
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+}
+table{
+    margin: auto;
+    color:white;
+}
+/*Add the necessary code to display a grey border around a game square when the mouse pointer hovers over it (HINT: CSS)*/
+td:hover{
+    border: 2px solid gray;
+}
+
 
 #menuToggle
 {
@@ -252,6 +300,7 @@ a:visited{
     padding: 10px 0;
     font-size: 30px;
     text-align: center;
+    color: darkred;
     padding-bottom: 30px;
 }
 
@@ -280,15 +329,10 @@ a:visited{
     border-radius: 10px; /* Rounded corners */
     opacity: 0.5;
 }
+a:visited{
+    color:white;
+}
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-}
-
-iframe{
-    height: 550px;
-    width: 500px;
-    margin-left: 200px;
-    margin-top: 40px;
-    border: 1px solid black;
 }

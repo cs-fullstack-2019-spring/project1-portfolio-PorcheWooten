@@ -84,13 +84,10 @@ body{
     background-color: black;
 }
 
-a{
-    color:white;
-}
+/*a{*/
+    /*color:white;*/
+/*}*/
 a:visited{
     color: darkred;
 }
 
-hr{
-    color: darkred; ;
-}

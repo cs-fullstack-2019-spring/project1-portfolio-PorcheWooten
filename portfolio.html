@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="jquery-3.3.1.js"></script>
+
+</head>
+<body>
+<nav role="navigation">
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="aboutMe.html"><li>About Me</li></a>
+            <a href=""><li>Portfolio</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+</nav>
+<div class="container" >
+<header>Portfolio</header>
+<section>
+    <div class="containerCG">
+        <div id="headerCG">The Clicking Game Challenge</div>
+        <section class="sectionCG" id="p1">
+            <div class="display">0</div>
+            <p><button class="p1Btn">Player 1</button></p>
+        </section>
+        <nav class="navCG" id=".inLead">In the lead:
+            <p id="winning"> </p></nav>
+        <article class="articleCG" id="p2">
+            <div class="display2">0</div>
+            <p><button class="p2Btn">Player 2</button></p>
+        </article>
+        <aside class="asideCG">Options</aside>
+        <div id="instrument">Play with:
+            <p><button id="keyboard">Keyboard (P&W)</button>
+                <button id="mouse" disabled>Mouse</button></p>
+        </div>
+        <div id="color">Change Background Color
+            <p><button id="redBtn">Red</button>
+                <button id="blueBtn">Blue</button>
+                <button id="yellowBtn">Yellow</button></p>
+        </div>
+
+        <footer><h6>Made by CodeCrew(Porche Wooten)</h6></footer>
+    </div>
+</section>
+
+<article>
+    <h1>Tic Tac Toe 9001</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td class="vertical"></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="horizontal"></td>
+            <td class="vertical horizontal"></td>
+            <td class="horizontal"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="vertical"></td>
+            <td></td>
+        </tr>
+
+    </table>
+    <button type="button" id="reset">New Game</button>
+</article>
+<script src="portfolio.js"></script>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+</body>
+</html>
