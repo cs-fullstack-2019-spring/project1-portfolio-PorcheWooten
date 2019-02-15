@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <link rel="stylesheet" href="aboutMe.css">
+    <script src="aboutMe.js"></script>
+    <script src="jquery-3.3.1.js"></script>
 </head>
 <body>
 <nav role="navigation">
@@ -39,7 +41,9 @@
 <div class="container">
 <header>
     <h1>Porche' Wooten</h1>
-    <p class="headTxt">Something about me!!!!!</p>
+    <p class="headTxt">Porche is a multi-talented hardworking young lady. She has worked hard to establish a life where she can challenge her creativity in many different aspects. While in high school, Porche' enrolled in a nursing vocational class, that she enjoyed very much. After graduating high school, Porche' went to Grambling State University to study nursing. After some time, she realized nursing was not something she was passionate enough about.<p/>
+    <p class="headTxt">Leaving Grambling, she moved closer to home, where she enrolled in Lane College(Jackson,TN) to study mass communication. With the goal of starting a career in creating movies, she quickly came to terms that it was just bad timing.</p>
+    <p class="headTxt">Taking some time to get a better understanding of what she should do with her life, she remembered she had taking a web designing class in high school. After some thought, she gain knowledge of CodeCrew Code School. She was nominated and admitted into CodeCrew Code School. She is now working toward exploring her creative talents through software development. </p>
     <!--<div></div>-->
 </header>
 
@@ -63,16 +67,39 @@
     <!--</ul>-->
 <!--</aside>-->
 <div id="reflections">Reflections of CodeCrew Code School
-    <p>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/Yt1OzJQr7ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/jgMMqEcP7HY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/tErLazpDjMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/P22COunLFhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/vYZwHQEukG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/WOS2xOgocXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
+    <div id="carousel">
+
+        <div class="hideLeft">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/Yt1OzJQr7ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="prevLeftSecond">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/jgMMqEcP7HY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="prev">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/tErLazpDjMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="selected">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/P22COunLFhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="next">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/vYZwHQEukG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="nextRightSecond">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/WOS2xOgocXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
 </div>
-<article><img src="IMG_0080.JPG" style="height: 400px; width:300px;"/></article>
+<article><img src="IMG_0080.JPG" style="height: 500px; width:300px;"/></article>
     <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 </div>
 </body>

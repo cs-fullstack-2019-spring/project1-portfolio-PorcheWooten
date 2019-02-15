@@ -1,0 +1,5 @@
+MORNING:
+*Added gif to homepage background
+*added carousel to about me page
+*css editing
+*added about me information!!

@@ -1,10 +1,10 @@
 .container{
     display: grid;
     grid-template-areas:
-            "header header"
-            "aside skills"
-            "aside skills";
-    grid-template-columns: 4fr 2fr;
+            "header header header"
+            "aside skills ."
+            "aside skills .";
+    grid-template-columns: 4fr 2fr 1fr;
     border:1px solid black;
     background-color: black;
     color: white;

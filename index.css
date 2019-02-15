@@ -1,3 +1,13 @@
+html {
+    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+}
+
+
 .container{
     display: grid;
     grid-template-areas:
