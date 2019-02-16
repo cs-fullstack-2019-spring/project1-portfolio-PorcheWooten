@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <link rel="stylesheet" href="aboutMe.css">
-    <script src="aboutMe.js"></script>
     <script src="jquery-3.3.1.js"></script>
+
+
 </head>
 <body>
-<nav role="navigation">
-    <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
 
-        <!--
-        Some spans to act as a hamburger.
-
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-            <a href="index.html"><li>Home</li></a>
-            <a href="resume.html"><li>Resume</li></a>
-            <a href="portfolio.html"><li>Portfolio</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-    </div>
-</nav>
 <div class="container">
-<header>
+    <header><span style="background-color: #000000">About Me</span>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="resume.html"><li>Resume</li></a>
+                    <a href="portfolio.html"><li>Portfolio</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<div id="head">
     <h1>Porche' Wooten</h1>
-    <p class="headTxt">Porche is a multi-talented hardworking young lady. She has worked hard to establish a life where she can challenge her creativity in many different aspects. While in high school, Porche' enrolled in a nursing vocational class, that she enjoyed very much. After graduating high school, Porche' went to Grambling State University to study nursing. After some time, she realized nursing was not something she was passionate enough about.<p/>
+    <p class="headTxt">Porche' is a multi-talented hardworking young lady. She has worked hard to establish a life where she can challenge her creativity in many different aspects. While in high school, Porche' enrolled in a nursing vocational class, that she enjoyed very much. After graduating high school, Porche' went to Grambling State University to study nursing. After some time, she realized nursing was not something she was passionate enough about.<p/>
     <p class="headTxt">Leaving Grambling, she moved closer to home, where she enrolled in Lane College(Jackson,TN) to study mass communication. With the goal of starting a career in creating movies, she quickly came to terms that it was just bad timing.</p>
     <p class="headTxt">Taking some time to get a better understanding of what she should do with her life, she remembered she had taking a web designing class in high school. After some thought, she gain knowledge of CodeCrew Code School. She was nominated and admitted into CodeCrew Code School. She is now working toward exploring her creative talents through software development. </p>
     <!--<div></div>-->
-</header>
+</div>
 
-<section>Education
-    <p class="eduTxt1">Porche attended Center Hill High School(Olive Branch,MS), where she obtained her high school diploma May of 2013.</p>
+<section><h1>Education</h1>
+    <p class="eduTxt1">Porche' attended Center Hill High School(Olive Branch,MS), where she obtained her high school diploma May of 2013.</p>
     <p class="eduTxt1">August of 2013, she attended Grambling State University(Grambling,LA), in which her focus was Nursing.</p>
     <p class="eduTxt1">A semester later she attended Lane College(Jackson,TN), where she majored in Mass Communications.</p>
     <p class="eduTxt1">After taking some time away from school to figure out what she really wanted to focus on she discovered the CodeCrew Code School(Memphis,TN) program to study software development.</p>
@@ -67,40 +71,51 @@
     <!--</ul>-->
 <!--</aside>-->
 <div id="reflections">Reflections of CodeCrew Code School
-    <div id="carousel">
+    <main>
 
-        <div class="hideLeft">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/Yt1OzJQr7ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="carousel">
+
+            <div class="selected">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/Yt1OzJQr7ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="prevLeftSecond">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/jgMMqEcP7HY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="prev">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/tErLazpDjMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="hideLeft">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/P22COunLFhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="next">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/vYZwHQEukG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="nextRightSecond">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/WOS2xOgocXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="hideRight">
+                <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+            </div>
+
         </div>
 
-        <div class="prevLeftSecond">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/jgMMqEcP7HY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="buttons">
+            <button id="prev"><img src="https://i.imgur.com/xkQnhjs.png"></button>
+            <button id="next"><img src="https://i.imgur.com/Tdv9U5m.png"></button>
         </div>
 
-        <div class="prev">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/tErLazpDjMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="selected">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/P22COunLFhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="next">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/vYZwHQEukG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="nextRightSecond">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/WOS2xOgocXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="buttons">
-        <button id="prev">Prev</button>
-        <button id="next">Next</button>
-    </div>
+    </main>
 </div>
-<article><img src="IMG_0080.JPG" style="height: 500px; width:300px;"/></article>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<article><img src="IMG_0080.JPG" style="height: 500px; width:350px;"/></article>
+    <a href="aboutMe.html"><button  id="myBtn" title="Go to top"></button></a>
 </div>
+
+<script src="aboutMe.js"></script>
 </body>
 </html>

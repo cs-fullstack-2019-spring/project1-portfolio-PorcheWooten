@@ -8,7 +8,7 @@
     border:1px solid black;
     background-color: black;
     color: white;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 body{
@@ -18,7 +18,7 @@ body{
 
 header{
     grid-area: header;
-    border-bottom: 1px solid darkred;
+    /*border-bottom: 1px solid darkgreen;*/
     font-size: 100px;
 
     padding-top: 50px;
@@ -27,14 +27,15 @@ header{
     text-align: center;
     padding-bottom: 50px;
     color: darkred;
-    background-color: gray;
-
+    /*background-color: gray;*/
+    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
+    background-size: cover;
 
 }
 
 aside{
     grid-area: aside;
-    border:1px solid darkred;
+    /*border:1px solid darkred;*/
     font-size: 20px;
     color: white;
     padding-left: 20px;
@@ -44,7 +45,7 @@ aside{
 
 section{
     grid-area: skills;
-    border:1px solid darkred;
+    border:1px solid green;
     color: white;
     padding-left: 20px;
     padding-top: 20px;
@@ -52,7 +53,7 @@ section{
 }
 
 .offerObj{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
@@ -70,16 +71,22 @@ p,strong{
 }
 
 dt{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 dd{
     font-size: 20px;
 }
 
+.skill{
+    font-size: 50px;
+}
+
 a:visited{
     color: darkred;
 }
+
+/*NAVIGATION MENU*/
 #menuToggle
 {
     display: block;
@@ -152,7 +159,7 @@ a:visited{
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: darkred;
+    background: green;
 }
 
 /*
@@ -185,7 +192,7 @@ a:visited{
     padding: 50px;
     padding-top: 90px;
 
-    background: darkgray;
+    background: darkred;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -202,6 +209,7 @@ a:visited{
     font-size: 30px;
     text-align: center;
     padding-bottom: 30px;
+    color: green;
 }
 
 /*
@@ -232,4 +240,13 @@ a:visited{
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+a:visited{
+    color: darkred;
+}
+
+
+a:hover{
+    color: green;
 }

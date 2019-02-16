@@ -6,18 +6,21 @@ body{
     grid-template-areas:
             "header header"
             "section article";
+            /*"footer footer";*/
             /*"article article";*/
     grid-template-columns: 1fr 1fr;
-    border:1px solid darkred;
+    /*border:1px solid darkred;*/
     background-color: black;
-    margin-top: 30px;
+    margin: 30px;
 }
 header{
     grid-area: header;
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
     color:darkred;
-    background-color: gray;
+    /*background-color: gray;*/
+    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
+    background-size: cover;
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -25,7 +28,7 @@ header{
 section{
     grid-area: section;
     font-size: 30px;
-    border:1px solid darkred;
+    border-right:1px solid green;
     color:white;
     padding:60px;
 
@@ -34,7 +37,7 @@ section{
 article{
     grid-area: article;
     font-size: 30px;
-    border:1px solid darkred;
+    /*border:1px solid darkred;*/
     color:white;
     padding-left: 30px;
     padding-right: 30px;
@@ -46,7 +49,7 @@ article{
             "headerCG headerCG headerCG"
             "sectionCG navCG articleCG"
             "asideCG instrument color"
-            ". footer .";
+            "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     /*border: 1px solid darkred;*/
     color:white;
@@ -251,7 +254,7 @@ td:hover{
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: darkred;
+    background: green;
 }
 
 /*
@@ -284,7 +287,7 @@ td:hover{
     padding: 50px;
     padding-top: 90px;
 
-    background: darkgray;
+    background: darkred;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -300,7 +303,7 @@ td:hover{
     padding: 10px 0;
     font-size: 30px;
     text-align: center;
-    color: darkred;
+    color: green;
     padding-bottom: 30px;
 }
 
@@ -329,10 +332,19 @@ td:hover{
     border-radius: 10px; /* Rounded corners */
     opacity: 0.5;
 }
+
+/*changes font color of links*/
 a:visited{
-    color:white;
+    color: darkred;
 }
 
+
+a:hover{
+    color: green;
+}
+
+
+/*Back To Top */
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }

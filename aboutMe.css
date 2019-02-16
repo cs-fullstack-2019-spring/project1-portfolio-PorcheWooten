@@ -1,43 +1,72 @@
 body{
     background-color: black;
+    /*margin: 20px;*/
 }
 
 .container{
     display: grid;
     grid-template-areas:
             /*"home resume portfolio contact article"*/
-            "header header header header article"
+
+            "header header header header header"
+            "head head head head article"
             "education education education education education"
             "reflections reflections reflections reflections reflections";
 
 
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     /*grid-template-rows: 10% repeat(3,1fr);*/
     /*border: 1px solid red;*/
     /*background-image: url("software-engineering.jpg");*/
     /*background-position: left bottom;*/
     /*background-repeat: no-repeat;*/
     background-color: black;
+    /*padding: 30px;*/
+    margin: 20px;
     }
 
-header{
-    grid-area: header;
-    border-bottom: 1px solid red;
+#head{
+    grid-area: head;
+    border-bottom: 1px solid green;
     font-size: 30px;
-    margin-top: 50px;
-    /*padding-top: 0px;*/
+    padding-top: 50px;
     /*!*color: white;*!*/
     /*padding-left: 20px;*/
     text-align: center;
-    /*padding-bottom: 150px;*/
-    color: red;
+    padding-bottom: 50px;
+    color: darkred;
+    /*background-color: gray;*/
+
+}
+header{
+    grid-area: header;
+    /*border-bottom: 1px solid green;*/
+    /*margin-top: 50px;*/
+    padding-top: 55px;
+    /*color: white;*/
+    padding-left: 20px;
+    text-align: center;
+    padding-bottom: 55px;
+    color: darkred;
+    /*background-color:gray;*/
+    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
+    background-size: cover;
+    font-size: 90px;
 }
 
-.headTxt,.eduTxt1{
+.headTxt{
     color: white;
     margin-left: 30px;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 23px;
+    /*padding: 10px;*/
+}
+/*edits education informational text*/
+.eduTxt1{
+    color: white;
+    margin-left: 30px;
+    font-size: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 article{
@@ -55,8 +84,8 @@ section{
     grid-area: education;
     /*border-bottom: 1px solid darkred;*/
     text-align: center;
-    color: red;
-    font-size: 60px;
+    color: darkred;
+    font-size: 40px;
 
 }
 
@@ -115,9 +144,9 @@ img{
 #reflections{
     grid-area: reflections;
     text-align: center;
-    color: red;
-    font-size: 30px;
-    border-top: 1px solid darkred;
+    color: darkred;
+    font-size: 40px;
+    border-top: 1px solid green;
     padding-top: 30px;
 }
 #home,#resume,#portfolio,#contact{
@@ -129,13 +158,11 @@ a:visited{
     color: darkred;
 }
 
-.eduTxt1{
-    color: white;
-    font-size: 25px;
-    padding-left: 3px;
-    padding-right: 20px;
-}
 
+a:hover{
+    color: green;
+}
+/*reference tabs*/
 #menuToggle
 {
     display: block;
@@ -208,7 +235,7 @@ a:visited{
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: darkred;
+    background: green;
 }
 
 /*
@@ -241,7 +268,7 @@ a:visited{
     padding: 50px;
     padding-top: 90px;
 
-    background: darkgray;
+    background: darkred;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -258,6 +285,7 @@ a:visited{
     font-size: 30px;
     text-align: center;
     padding-bottom: 30px;
+    color: green;
 }
 
 /*
@@ -370,8 +398,37 @@ html, body, main {
 }
 
 .buttons {
-    position: fixed;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;
+    /*display: block;*/
+
+
 }
+
+#prev{
+    color: darkred;
+    background: black;
+    height: 4px;
+    width: 47px;
+    border: none;
+    font-size: 30px;
+
+}
+
+#next{
+    color: darkred;
+    background: black;
+    height: 40px;
+    width: 47px;
+    border: none;
+    font-size: 30px;
+   margin-left: 10px;
+}
+
+img{
+    height: 40px;
+    width: 47px;
+}
+

@@ -2,13 +2,12 @@
     display: grid;
     grid-template-areas:
             "header header"
-            "form myInfo"
-            "footer myInfo";
+            "aside aside";
 
     grid-template-columns: 2fr 2fr;
     /*border: 1px solid red;*/
     background-color: black;
-    margin-top: 30px;
+    /*margin: 30px;*/
 
 }
 
@@ -21,18 +20,20 @@ header{
     grid-area: header;
     /*border: 1px solid red;*/
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
     color:darkred;
-    background-color: gray;
+    /*background-color: gray;*/
+    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) fixed;
     padding-bottom: 50px;
     padding-top: 50px;
+    padding-left: 30px;
 
 }
 #tab{
     grid-area: tab;
 }
 aside{
-    grid-area: form;
+    grid-area: aside;
     /*border: 1px solid red;*/
     color: white;
     font-size: 40px;
@@ -203,7 +204,7 @@ a:visited{
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: darkred;
+    background: green;
 }
 
 /*
@@ -236,7 +237,7 @@ a:visited{
     padding: 50px;
     padding-top: 90px;
 
-    background: darkgray;
+    background: darkred;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -253,6 +254,7 @@ a:visited{
     font-size: 30px;
     text-align: center;
     padding-bottom: 30px;
+    color: green;
 }
 
 /*
@@ -286,9 +288,18 @@ a:visited{
 }
 
 iframe{
-    height: 550px;
-    width: 500px;
-    margin-left: 200px;
+    height: 750px;
+    width:900px;
+    margin-left: 350px;
     margin-top: 40px;
     border: 1px solid black;
+}
+
+a:visited{
+    color: darkred;
+}
+
+
+a:hover{
+    color: green;
 }

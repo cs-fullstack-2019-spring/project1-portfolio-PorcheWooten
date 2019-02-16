@@ -8,38 +8,40 @@
 
 </head>
 <body>
-<nav role="navigation">
-    <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
 
-        <!--
-        Some spans to act as a hamburger.
-
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-            <a href="index.html"><li>Home</li></a>
-            <a href="aboutMe.html"><li>About Me</li></a>
-            <a href=""><li>Portfolio</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-    </div>
-</nav>
 <div class="container" >
-<header>Portfolio</header>
+    <header><span style="background-color: #000000">Portfolio</span>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+
+            <!--
+            Some spans to act as a hamburger.
+
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutMe.html"><li>About Me</li></a>
+                <a href="resume.html"><li>Resume</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+</header>
 <section>
     <div class="containerCG">
         <div id="headerCG">The Clicking Game Challenge</div>
@@ -91,8 +93,10 @@
     </table>
     <button type="button" id="reset">New Game</button>
 </article>
+
+
 <script src="portfolio.js"></script>
 </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<a href="portfolio.html"><button id="myBtn" title="Go to top"></button></a>
 </body>
 </html>
