@@ -86,8 +86,10 @@ section{
     text-align: center;
     color: darkred;
     font-size: 40px;
+    padding-bottom: 25px;
 
 }
+
 
 
 .skillList{
@@ -403,7 +405,7 @@ html, body, main {
     transform: translateX(-50%);
     bottom: 10px;
     /*display: block;*/
-
+    border: none;
 
 }
 

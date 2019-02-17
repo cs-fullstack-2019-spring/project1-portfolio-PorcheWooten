@@ -3,7 +3,8 @@
     grid-template-areas:
             "header header header"
             "aside skills ."
-            "aside skills .";
+            "aside skills ."
+            "footer footer footer";
     grid-template-columns: 4fr 2fr 1fr;
     border:1px solid black;
     background-color: black;
@@ -52,6 +53,11 @@ section{
 
 }
 
+footer{
+    grid-area: footer;
+    color: white;
+    font-size: 30px;
+}
 .offerObj{
     font-size: 20px;
     color: white;

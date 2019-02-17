@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+#backToResume{
+    font-size: 30px;
+    color: darkred;
+    text-align: left;
+    padding-left: 30px;
+}
+
+/*a{*/
+    /*color:darkred;*/
+/*}*/
+
+img:hover{
+    color: green;
+}
+
+a:visited{
+    color: black;
+}
