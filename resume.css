@@ -41,6 +41,7 @@ aside{
     color: white;
     padding-left: 20px;
     padding-top: 20px;
+    margin-left: 10%;
 
 }
 
@@ -50,6 +51,7 @@ section{
     color: white;
     padding-left: 20px;
     padding-top: 20px;
+    margin-left: 15%;
 
 }
 
@@ -255,4 +257,8 @@ a:visited{
 
 a:hover{
     color: green;
+}
+
+#download{
+    font-size: 40px;
 }

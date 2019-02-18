@@ -288,10 +288,11 @@ a:visited{
 }
 
 iframe{
-    height: 750px;
+    height: 1200px;
     width:900px;
-    margin-left: 350px;
-    margin-top: 40px;
+    margin-left: 23%;
+    /*margin-right:15%;*/
+    margin-top: 10%;
     border: 1px solid black;
 }
 
