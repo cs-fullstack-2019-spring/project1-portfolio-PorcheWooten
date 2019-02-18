@@ -34,7 +34,7 @@ body{
     /*padding-left: 20px;*/
     text-align: center;
     padding-bottom: 50px;
-    color: darkred;
+    color: red;
     /*background-color: gray;*/
 
 }
@@ -47,7 +47,7 @@ header{
     padding-left: 20px;
     text-align: center;
     padding-bottom: 55px;
-    color: darkred;
+    color: red;
     /*background-color:gray;*/
     background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
     background-size: cover;
@@ -84,7 +84,7 @@ section{
     grid-area: education;
     /*border-bottom: 1px solid darkred;*/
     text-align: center;
-    color: darkred;
+    color: red;
     font-size: 40px;
     padding-bottom: 25px;
 
@@ -146,7 +146,7 @@ img{
 #reflections{
     grid-area: reflections;
     text-align: center;
-    color: darkred;
+    color: red;
     font-size: 40px;
     border-top: 1px solid green;
     padding-top: 30px;
@@ -207,7 +207,7 @@ a:hover{
     margin-bottom: 7px;
     position: relative;
 
-    background:darkred;
+    background:red;
     border-radius: 3px;
 
     z-index: 1;

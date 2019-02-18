@@ -28,7 +28,7 @@ header{
     font-size: 80px;
     margin-top: 50px;
     /*padding-top: 75px;*/
-    color: darkred;
+    color: red;
 }
 
 section{
@@ -38,7 +38,7 @@ section{
     font-size: 25px;
     margin-bottom: 80px;
     /*margin-top: 10px;*/
-    color: darkred;
+    color: red;
     padding-bottom: 60px;
 }
 
@@ -74,7 +74,7 @@ footer{
 
 #contact,#reflections,#aboutMe,#resume{
     font-size: 30px;
-    color: darkred;
+    color: red;
     /*border-top: 1px solid darkred;*/
     /*padding-top: 30px;*/
 }

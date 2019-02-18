@@ -27,7 +27,7 @@ header{
     /*padding-left: 20px;*/
     text-align: center;
     padding-bottom: 50px;
-    color: darkred;
+    color: red;
     /*background-color: gray;*/
     background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
     background-size: cover;
@@ -137,7 +137,7 @@ a:visited{
     margin-bottom: 7px;
     position: relative;
 
-    background:darkred;
+    background:red;
     border-radius: 3px;
 
     z-index: 1;
@@ -261,4 +261,5 @@ a:hover{
 
 #download{
     font-size: 40px;
+    color: red;
 }

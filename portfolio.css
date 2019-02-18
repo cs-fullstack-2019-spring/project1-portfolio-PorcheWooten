@@ -17,7 +17,7 @@ header{
     grid-area: header;
     text-align: center;
     font-size: 100px;
-    color:darkred;
+    color:red;
     /*background-color: gray;*/
     background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
     background-size: cover;
@@ -39,8 +39,8 @@ article{
     font-size: 30px;
     /*border:1px solid darkred;*/
     color:white;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 /*Create Grid for the clicking game!*/
 .containerCG{
@@ -70,6 +70,7 @@ article{
     text-align: center;
     /*padding-bottom: 10px;*/
     color:white;
+
 }
 
 .navCG{
@@ -89,6 +90,7 @@ article{
     color:white;
     padding-top: 55px;
     padding-left: 45px;
+  */
 }
 .asideCG{
     grid-area: asideCG;
@@ -152,8 +154,8 @@ footer{
 
 td{
     /*border: 2px solid black;*/
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     font-size: 85px;
     color:white;
@@ -224,7 +226,7 @@ td:hover{
     margin-bottom: 7px;
     position: relative;
 
-    background:darkred;
+    background:red;
     border-radius: 3px;
 
     z-index: 1;
