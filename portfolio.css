@@ -30,7 +30,7 @@ section{
     font-size: 30px;
     border-right:1px solid green;
     color:white;
-    padding:60px;
+    padding:65px;
 
 }
 
@@ -88,8 +88,8 @@ article{
     border-left: 1px solid gray;
     text-align: center;
     color:white;
-    padding-top: 55px;
-    padding-left: 45px;
+    /*padding-top: 55px;*/
+    /*padding-left: 45px;*/
   */
 }
 .asideCG{
@@ -350,3 +350,15 @@ a:hover{
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
+
+#clickGame{
+    margin-left:30%;
+}
+
+.click{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+ }
+
