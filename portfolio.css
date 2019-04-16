@@ -1,18 +1,29 @@
 body{
     background-color: black;
 }
-.container{
+.portfolioContainer{
     display: grid;
     grid-template-areas:
             "header header"
-            "section article";
+            "pieChart pieChart"
+            "section section";
             /*"footer footer";*/
             /*"article article";*/
     grid-template-columns: 1fr 1fr;
     /*border:1px solid darkred;*/
     background-color: black;
     margin: 30px;
+    border: 1px solid greenyellow;
 }
+
+#pieChart{
+    grid-area: pieChart;
+    /*padding-right: 3%;*/
+    padding-bottom: 15%;
+    /*padding-left: 5%;*/
+
+}
+
 header{
     grid-area: header;
     text-align: center;
@@ -23,14 +34,17 @@ header{
     background-size: cover;
     padding-bottom: 50px;
     padding-top: 50px;
+    border: 1px solid greenyellow;
 }
 
 section{
     grid-area: section;
     font-size: 30px;
-    border-right:1px solid green;
+    /*border-right:1px solid green;*/
     color:white;
     padding:65px;
+    border: 1px solid greenyellow;
+    display: inline-block;
 
 }
 
@@ -41,6 +55,7 @@ article{
     color:white;
     padding-left: 60px;
     padding-right: 60px;
+    border: 1px solid greenyellow;
 }
 /*Create Grid for the clicking game!*/
 .containerCG{
@@ -90,7 +105,7 @@ article{
     color:white;
     /*padding-top: 55px;*/
     /*padding-left: 45px;*/
-  */
+
 }
 .asideCG{
     grid-area: asideCG;
@@ -340,7 +355,6 @@ a:visited{
     color: darkred;
 }
 
-
 a:hover{
     color: green;
 }
@@ -362,3 +376,41 @@ a:hover{
     margin-left: 10%;
  }
 
+
+
+/*Chart percentage bar*/
+
+.container{
+    width: 1000px;
+    margin: 50px auto 0;
+}
+
+.container .box{
+    width: 25%;
+    float:left;
+}
+
+.container .box .chart{
+    position: relative;
+    width: 80px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size:30px;
+    color: lawngreen;
+    line-height:110px;
+}
+
+.pieChartHeader{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    /*padding-bottom: 5%;*/
+    /*margin-bottom: 10%;*/
+}
+
+.container .box canvas{
+    position: absolute;
+    top: 1;
+    left: 1;
+}

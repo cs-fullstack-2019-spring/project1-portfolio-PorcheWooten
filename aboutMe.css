@@ -1,68 +1,111 @@
-body{
-    background-color: black;
-    /*margin: 20px;*/
-}
+/*body{*/
+/*    background-color: white;*/
+/*    !*margin: 20px;*!*/
+/*    background:  url(https://i.imgur.com/oe8xHya.gif) no-repeat right fixed;*/
+/*    !*background-size: cover;*!*/
+/*}*/
 
-.container{
+/*.bodyContainer{*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            !*"home resume portfolio contact article"*!*/
+
+/*            "header header header header"*/
+/*            "head head head article"*/
+/*            "education education education education "*/
+/*            "reflections reflections reflections reflections";*/
+
+
+    /*grid-template-columns: 1fr 1fr 1fr 1fr ;*/
+    /*!*grid-template-rows: 10% repeat(3,1fr);*!*/
+    /*!*border: 1px solid red;*!*/
+    /*!*background-image: url("software-engineering.jpg");*!*/
+    /*!*background-position: left bottom;*!*/
+    /*!*background-repeat: no-repeat;*!*/
+    /*background-color: yellow;*/
+    /*!*padding: 30px;*!*/
+    /*margin: 5%;*/
+    /*}*/
+
+
+.aboutMeContainer{
     display: grid;
     grid-template-areas:
-            /*"home resume portfolio contact article"*/
+            "pic head";
+    grid-template-columns: 2fr 2fr;
+    /*border: 1px solid black;*/
+    /*margin-top: 2%;*/
+    margin-bottom: 5%;
+    margin-right: 10%;
+    /*margin-left: 5%;*/
 
-            "header header header header header"
-            "head head head head article"
-            "education education education education education"
-            "reflections reflections reflections reflections reflections";
-
-
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    /*grid-template-rows: 10% repeat(3,1fr);*/
-    /*border: 1px solid red;*/
-    /*background-image: url("software-engineering.jpg");*/
-    /*background-position: left bottom;*/
-    /*background-repeat: no-repeat;*/
-    background-color: black;
-    /*padding: 30px;*/
-    margin: 20px;
-    }
+}
+img{
+    grid-area: pic;
+    /*border: 1px solid black;*/
+    padding-left: 25%;
+    /*margin-left: 10%;*/
+}
 
 #head{
-    grid-area: head;
+
     border-bottom: 1px solid green;
     font-size: 30px;
     padding-top: 50px;
     /*!*color: white;*!*/
     /*padding-left: 20px;*/
-    text-align: center;
+    text-align: left;
     padding-bottom: 50px;
     color: red;
     /*background-color: gray;*/
+    padding-right: 2%;
 
 }
-header{
-    grid-area: header;
-    /*border-bottom: 1px solid green;*/
-    /*margin-top: 50px;*/
-    padding-top: 55px;
-    /*color: white;*/
-    padding-left: 20px;
-    text-align: center;
-    padding-bottom: 55px;
-    color: red;
-    /*background-color:gray;*/
-    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
-    background-size: cover;
-    font-size: 90px;
+
+.myName{
+    /*padding-left: 5%;*/
+    font-size: 85px;
+    text-align: left;
+    margin-top: 10%;
+    font-family: 'Sofia';
+    padding-bottom: 5%;
+
 }
+
+/*header{*/
+/*    grid-area: header;*/
+/*    !*border-bottom: 1px solid green;*!*/
+/*    !*margin-top: 50px;*!*/
+/*    padding-top: 55px;*/
+/*    !*color: white;*!*/
+/*    padding-left: 20px;*/
+/*    text-align: left;*/
+/*    padding-bottom: 55px;*/
+/*    color: red;*/
+/*    !*background-color:gray;*!*/
+
+/*    font-size: 90px;*/
+/*}*/
 
 .headTxt{
+    grid-area: head;
     color: white;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
     font-size: 23px;
     /*padding: 10px;*/
+    text-align: left;
+    /*margin-right: 50%;*/
+    /*border: 1px solid black;*/
+    margin-top: 9%;
+    padding-right: 15%;
+    padding-left: 10%;
+    background: red;
+    /*margin-right: 10%;*/
+    padding-bottom: 5%;
 }
 /*edits education informational text*/
 .eduTxt1{
-    color: white;
+    color: red;
     margin-left: 30px;
     font-size: 23px;
     padding-left: 40px;
@@ -115,45 +158,57 @@ img{
     margin-top: 60px;
 }
 
-#home{
-    grid-area: home;
-    /*border: 1px solid black;*/
-    text-align: center;
-    color: white;
-}
+/*#home{*/
+/*    grid-area: home;*/
+/*    !*border: 1px solid black;*!*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
 
-#resume{
-    grid-area: resume;
-    /*border: 1px solid black;*/
-    text-align: center;
-    color: white;
-}
+/*#resume{*/
+/*    grid-area: resume;*/
+/*    !*border: 1px solid black;*!*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
 
-#portfolio{
-    grid-area: portfolio;
-    /*border: 1px solid black;*/
-    text-align: center;
-    color: white;
-}
+/*#portfolio{*/
+/*    grid-area: portfolio;*/
+/*    !*border: 1px solid black;*!*/
+/*    text-align: center;*/
+/*    color: red;*/
+/*}*/
 
-#contact {
-    grid-area: contact;
-    border-right: 1px solid red;
-    text-align: center;
-    color: white;
-}
+/*#contact {*/
+/*    grid-area: contact;*/
+/*    border-right: 1px solid red;*/
+/*    text-align: center;*/
+/*    color: red;*/
+/*}*/
 
-#reflections{
-    grid-area: reflections;
+/*#reflections{*/
+/*    grid-area: reflections;*/
+/*    text-align: center;*/
+/*    color: red;*/
+/*    font-size: 40px;*/
+/*    border-top: 1px solid green;*/
+/*    padding-top: 30px;*/
+/*}*/
+/*#home,#resume,#portfolio,#contact{*/
+/*    font-size: 15px;*/
+/*    border-left: 1px solid red;*/
+/*}*/
+
+#contact,#reflections,#home,#resume{
+    font-size: 30px;
+    color: yellow;
+    display: inline-block;
+    /*border-top: 1px solid darkred;*/
+    padding-top: 1%;
+    padding-left: 16%;
     text-align: center;
-    color: red;
-    font-size: 40px;
-    border-top: 1px solid green;
-    padding-top: 30px;
-}
-#home,#resume,#portfolio,#contact{
-    font-size: 15px;
-    border-left: 1px solid red;
+    padding-bottom: 1%;
+    /*margin-bottom: 5%;*/
 }
 
 a:visited{
@@ -432,5 +487,10 @@ html, body, main {
 img{
     height: 40px;
     width: 47px;
+}
+
+nav{
+    background: blue;
+
 }
 

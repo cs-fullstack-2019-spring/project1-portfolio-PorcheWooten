@@ -1,6 +1,7 @@
 html {
-    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
-    background-size: cover;
+    background:  url(https://static1.squarespace.com/static/5808b8cae58c62d48017c814/5808bb82b8a79b2b732327cf/58f2f974197aea53172275e3/1492318918831/Webdesign-Amsterdam-Foto-1.png?format=1500w) no-repeat left fixed;
+    /*background-size: cover;*/
+
 }
 
 body {
@@ -11,72 +12,80 @@ body {
 .container{
     display: grid;
     grid-template-areas:
-            "header header header header"
-            "section section section section"
-            " aboutMe resume reflections contact"
-            "footer footer footer footer";
+            ". header header header"
+            ". section section section";
+            /*" aboutMe resume reflections contact"*/
+            /*"footer footer footer footer";*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: 1px solid black;
-    margin: 10%;
+    /*border: 1px solid black;*/
+    margin-left: 10%;
 
 }
 
 header{
     grid-area: header;
-    /*border: 1px solid black;*/
+    border-bottom: 1px solid yellow;
     text-align: center;
-    font-size: 80px;
-    margin-top: 50px;
+    font-size: 70px;
+    margin-top: 14%;
     /*padding-top: 75px;*/
     color: red;
+    margin-left: 20%;
+    margin-right: 2%;
+    /*padding-right: 5%;*/
+    padding-bottom: 5%;
 }
 
 section{
     grid-area: section;
-    border-bottom: 1px solid green;
+    /*border-bottom: 1px solid green;*/
     text-align: center;
     font-size: 25px;
     margin-bottom: 80px;
-    /*margin-top: 10px;*/
+    margin-top: 5%;
     color: red;
     padding-bottom: 60px;
+    padding-left: 15%;
 }
 
 #aboutMe{
     grid-area: aboutMe;
     /*border: 1px solid black;*/
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #resume{
     grid-area: resume;
     /*border: 1px solid black;*/
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #reflections{
     grid-area: reflections;
     /*border: 1px solid black;*/
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #contact{
     grid-area: contact;
     /*border: 1px solid black;*/
-    text-align: center;
+    /*text-align: center;*/
 }
 
 footer{
     grid-area: footer;
-    border: 1px solid black;
-    text-align: center;
+    /*border: 1px solid black;*/
+    /*text-align: center;*/
 }
 
 #contact,#reflections,#aboutMe,#resume{
     font-size: 30px;
     color: red;
+    display: inline-block;
     /*border-top: 1px solid darkred;*/
-    /*padding-top: 30px;*/
+    padding-top: 5%;
+    padding-left: 15%;
+    text-align: center;
 }
 
 #signUpBtn{
@@ -90,18 +99,24 @@ footer{
     grid-area: pic;
 }
 
-body{
-    background-color: black;
-}
+/*body{*/
+/*    background-color: white;*/
+/*    !*margin-left: 50%;*!*/
+/*    padding-right: 10%;*/
+/*}*/
 
 /*a{*/
     /*color:white;*/
 /*}*/
 a:visited{
-    color: black;
+    color: white;
 }
 
 a:hover{
     color: green;
 }
 
+
+nav{
+    /*background: yellow;*/
+}

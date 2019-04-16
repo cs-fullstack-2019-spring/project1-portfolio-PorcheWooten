@@ -9,7 +9,8 @@
 </head>
 <body>
 
-<div class="container" >
+<div class="portfolioContainer" >
+
     <header><span style="background-color: #000000">Portfolio</span>
     <nav role="navigation">
         <div id="menuToggle">
@@ -42,10 +43,41 @@
         </div>
     </nav>
 </header>
+
+    <div id="pieChart">
+        <div class="pieChartHeader">
+            Langauges
+        </div>
+        <div class="container" >
+            <div class="box">
+                <div class="chart" data-percent="75">Javascript</div>
+            </div>
+            <div class="box">
+                <div class="chart" data-percent="75">Python</div>
+            </div>
+            <div class="box">
+                <div class="chart" data-percent="80">MERN</div>
+            </div>
+            <div class="box">
+                <div class="chart" data-percent="82">DJango</div>
+            </div>
+        </div>
+    </div>
 <section>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://i.imgur.com/VzdT4WQ.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">The Clicking Game</h5>
+<!--            <p class="card-text"></p>-->
+<!--            <p class="card-text"></p>-->
+            <hr/>
+        </div>
+    </div>
+
+
 
    <img id="clickGame" src="https://i.imgur.com/VzdT4WQ.png">
-    <a href="project.html"><div class="click">Click here</div></a>
+<!--    <a href="project.html"><div class="click">Click here</div></a>-->
 </section>
 
 <article>
@@ -72,9 +104,20 @@
     <button type="button" id="reset">New Game</button>
 </article>
 
-
+<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+<script src="jquery.easypiechart.js"></script>
+    <script>
+        $(function() {
+            $('.chart').easyPieChart({
+                //your options goes here
+            });
+        });
+    </script>
 <script src="portfolio.js"></script>
 </div>
 <a href="portfolio.html"><button id="myBtn" title="Go to top"></button></a>
+
+
+
 </body>
 </html>
