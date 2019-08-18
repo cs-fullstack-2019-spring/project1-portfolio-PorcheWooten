@@ -6,29 +6,48 @@
 
     grid-template-columns: 2fr 2fr;
     /*border: 1px solid red;*/
-    background-color: black;
+    /*background-color: black;*/
     /*margin: 30px;*/
 
 }
 
-body{
-    background-color: black;
-    /*margin-top: 0px;*/
-}
+/*body{*/
+/*    background-color: black;*/
+/*    !*margin-top: 0px;*!*/
+/*}*/
 
 header{
     grid-area: header;
-    /*border: 1px solid red;*/
+    border-top: 2px solid darkred;
+    border-bottom: 2px solid darkred;
     text-align: center;
-    font-size: 100px;
-    color:red;
+    font-size: 70px;
+    color:darkblue;
     /*background-color: gray;*/
-    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) fixed;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 30px;
+    /*background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) fixed;*/
+    /*padding-bottom: 50px;*/
+    margin-top: 1%;
+    /*padding-left: 30px;*/
 
 }
+
+nav{
+    background: darkblue;
+    text-align: right;
+}
+
+a{
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    /*border-top: 1px solid darkred;*/
+    /*padding-top: 1%;*/
+    padding-left: 3%;
+    padding-right: 3%;
+    /*padding-bottom: 1%;*/
+    /*margin-bottom: 5%;*/
+}
+
 #tab{
     grid-area: tab;
 }
@@ -40,14 +59,14 @@ aside{
 
 }
 
-nav{
-    grid-area: myInfo;
-    /*border: 1px solid red;*/
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    /*margin-top: 60px; ;*/
-}
+/*nav{*/
+/*    grid-area: myInfo;*/
+/*    !*border: 1px solid red;*!*/
+/*    color: white;*/
+/*    font-size: 30px;*/
+/*    text-align: center;*/
+/*    !*margin-top: 60px; ;*!*/
+/*}*/
 .contactTxt{
     margin-top: 80px;
 }
@@ -84,9 +103,9 @@ input{
     padding-top: 10px;
 }
 
-a:visited{
-    color: darkred;
-}
+/*a:visited{*/
+/*    color: darkred;*/
+/*}*/
 
 /*form{*/
     /*margin-right: auto;*/
@@ -99,38 +118,38 @@ a:visited{
     width: 110px;
 }
 
-#home{
-    /*grid-area: home;*/
-    /*border: 1px solid darkred;*/
-    text-align: center;
-    color: white;
-}
+/*#home{*/
+/*    !*grid-area: home;*!*/
+/*    !*border: 1px solid darkred;*!*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
 
-#resume{
-    /*grid-area: resume;*/
-    /*border: 1px solid black;*/
-    text-align: center;
-    color: white;
-}
+/*#resume{*/
+/*    !*grid-area: resume;*!*/
+/*    !*border: 1px solid black;*!*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
 
-#reflections{
-    /*grid-area: reflections;*/
-    border-bottom: 1px solid darkred;
-    text-align: center;
-    color: white;
-}
+/*#reflections{*/
+/*    !*grid-area: reflections;*!*/
+/*    border-bottom: 1px solid darkred;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
 
-#aboutMe {
-    /*grid-area: contact;*/
-    /*border-top: 1px solid darkred;*/
-    text-align: center;
-    color: white;
-}
-#home,#resume,#reflections,#aboutMe {
-    font-size: 30px;
-    border-bottom: 1px solid darkred;
-    padding-bottom: 40px;
-}
+/*#aboutMe {*/
+/*    !*grid-area: contact;*!*/
+/*    !*border-top: 1px solid darkred;*!*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
+/*#home,#resume,#reflections,#aboutMe {*/
+/*    font-size: 30px;*/
+/*    border-bottom: 1px solid darkred;*/
+/*    padding-bottom: 40px;*/
+/*}*/
 
 #menuToggle
 {
@@ -292,15 +311,15 @@ iframe{
     width:900px;
     margin-left: 23%;
     /*margin-right:15%;*/
-    margin-top: 10%;
-    border: 1px solid black;
+    margin-top: 5%;
+    /*border: 1px solid black;*/
 }
 
-a:visited{
-    color: darkred;
-}
+/*a:visited{*/
+/*    color: darkred;*/
+/*}*/
 
 
 a:hover{
-    color: green;
+    background-color: darkred;
 }

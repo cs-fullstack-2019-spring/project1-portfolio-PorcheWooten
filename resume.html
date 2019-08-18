@@ -7,46 +7,112 @@
 
 </head>
 <body>
-<a id="download" href="resumePDF.html" download><div>Download</div></a>
-<div class="container" >
 
-    <header><span style="background-color: #000000">Resume</span>
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
+    <nav>
+        <a href="index.html"> <div id="home">Home</div></a>
 
-            <!--
-            Some spans to act as a hamburger.
+        <a href="aboutMe.html"><div id="aboutMe">About</div></a>
 
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="portfolio.html"><div id="reflections">Portfolio</div></a>
 
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <ul id="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="aboutMe.html"><li>About Me</li></a>
-                <a href="portfolio.html"><li>Portfolio</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </div>
+        <a href="contact.html"><div id="contact">Contact </div></a>
     </nav>
-</header>
-<section>
-    <strong class="skill">Skills</strong>
-    <p><strong>Languages</strong></p>
 
-    <canvas id="doughnutChart"></canvas>
+<!--<a id="download" src="PORCHE%20%20WOOTEN%20RESUME%2020151%20(2).pdf" download><div>Download</div></a>-->
+
+
+<div class="container" >
+    <header>
+        <div class="center">
+            <div class="name">Porche' Wooten</div>
+            <div class="resizeText1">
+                <div>9325 S Kolmar Ave</div>
+                <div>Oak Lawn, IL 60453</div>
+                <div>773.241.0513</div>
+                <div>porche.wooten@yahoo.com</div>
+            </div>
+            <hr/>
+            <div class="resizeText2"><strong>SUMMARY OF QUALIFICATIONS</strong></div>
+            <p>Highly professional full stack developer. Persistently exceeds expectations. Offering skills in Javascript, Python, Html/CSS, Django, and MERN(Mongoose, Express, React, NodeJs).</p>
+        </div>
+        <div class="bulletContainer">
+            <ul id="column1">
+                <li>Computer Skills</li>
+                <li>Customer Service</li>
+                <li>Administrative Skills</li>
+                <li>Leadership</li>
+            </ul>
+            <ul id="column2">
+                <li>MS Word</li>
+                <li>MS Excel</li>
+                <li>MS Access</li>
+                <li>MS PowerPoint</li>
+            </ul>
+            <ul id="column3">
+                <li>Communication Skills</li>
+                <li>Hospitality</li>
+                <li>Presentation Skills</li>
+                <li>Fast-Paced</li>
+            </ul>
+
+        </div>
+        <hr/>
+        <div class="center">
+            <div class="resizeText3"><strong>EDUCATION</strong></div>
+            <div>30 Hours Completed, Nursing, Grambling, LA					              2018
+                Grambling State University
+
+                <p>Diploma, Center Hill High School, Olive Branch, MS						2013
+                Concentration in Nursing</p>
+            </div>
+        </div>
+        <hr/>
+        <div class="center">
+            <div class="resizeText3"><strong>PROFESSIONAL EXPERIENCE</strong></div>
+        </div>
+        <div class="resizeText4">BURGER KING, Olive Branch, MS 2013 – 2015
+            <div>Cashier</div>
+        </div>
+
+            <ul>
+                <li>Assisted customers with orders in a timely manner.</li>
+                <li>Responsible for prep-work in the kitchen and working the cash register.</li>
+                <li>Ensured food was cooked properly and to customer’s satisfaction.</li>
+            </ul>
+        <div class="resizeText4">Kelly’s Educational Services, Memphis, TN	2015 - 2019
+            <div> Educational Instructor</div>
+        </div>
+        <ul>
+            <li>Actualized lesson plans for students to ensure curriculum timeline was maintained</li>
+            <li>Oversaw behavioral conduct for up to 20 k-12 students</li>
+            <li>Executed creative time management strategies for 4 different subjects</li>
+        </ul>
+        <div class="resizeText4">PHELPS SECURITY, Memphis, TN 2017 – 2019
+
+            <div>Security Officer</div>
+        </div>
+        <ul>
+            <li>Serve as the Receptionist, answering phones and calling in alarm testing.</li>
+            <li>Check in trucks upon arrival and distribute paychecks.</li>
+        </ul>
+        <div class="center">
+            <div class="resizeText3"><strong>VOLUNTEER EXPERIENCE</strong></div>
+        </div>
+        <div class="resizeText4">Ida B. Wells Family Art Gallery, Holly Springs, MS 2015 – 2016
+
+            <div>Administrative Assistant</div>
+        </div>
+        <ul>
+            <li>Assist with tours & receipt donations, flyers and letters.</li>
+        </ul>
+
+
+    </header>
+<section>
+<!--    <strong class="skill">Skills</strong>-->
+<!--    <p><strong>Languages</strong></p>-->
+
+<!--    <canvas id="doughnutChart"></canvas>-->
 <!--<ul>-->
 <!--    <li>Javascript</li>-->
 <!--    <li>Python</li>-->
@@ -68,51 +134,51 @@
 
 </section>
 
-<aside><strong>Objective</strong>
-    <p class="offerObj">To obtain a position in a fast moving organization that will exploit my education and experience while allowing me to continue to use my skills and training.</p>
-    <p id="offer"><strong>Education</strong></p>
-  <dl>
-      <dt>Center Hill High School(Olive Branch,MS)</dt>
-      <dd>Major course of study with concentration: Nursing</dd>
-      <dd>Graduation Date: May 2013</dd>
-      <dt>CodeCrew Code School(Memphis,TN)</dt>
-      <dd>Current student of the Beta Class. Course of study: Software Development</dd> <dd>Graduation Date: June 2019 </dd>
-  </dl>
-    <p><strong>Employment</strong></p>
-    <strong>Wal-Mart</strong>
-    <ul>
-        <!--<div> Overnight Mod/Remodel Team</div>-->
-        <li> organize and update products and pricing</li>
-        <li> remodel entire store</li>
-    </ul>
-    <strong>Phelp's Security</strong>
-    <ul>
-        <li>Answer phone</li>
-        <li>Create spreadsheets using Excel</li>
-        <li>Log incoming and exiting truck</li>
-        <li>Distribute check</li>
-        <li>Filing</li>
-    </ul>
-    <strong>Kelly's Educational Services</strong>
-    <ul>
-        <li>Substitute Teacher</li>
-    </ul>
-    <p><strong>Volunteer Experience</strong></p>
-    <strong>Ida B. Wells Family Art Gallery</strong>
-    <ul>
-        <li>Bookeeping</li>
-        <li>Assist with tours</li>
-        <li>Prepare flyers</li>
-        <li>Prepare letter</li>
-        <li>Answer phones</li>
-        <li>Receipt donations</li>
-    </ul>
-</aside>
+<!--<aside><strong>Objective</strong>-->
+<!--    <p class="offerObj">To obtain a position in a fast moving organization that will exploit my education and experience while allowing me to continue to use my skills and training.</p>-->
+<!--    <p id="offer"><strong>Education</strong></p>-->
+<!--  <dl>-->
+<!--      <dt>Center Hill High School(Olive Branch,MS)</dt>-->
+<!--      <dd>Major course of study with concentration: Nursing</dd>-->
+<!--      <dd>Graduation Date: May 2013</dd>-->
+<!--      <dt>CodeCrew Code School(Memphis,TN)</dt>-->
+<!--      <dd>Current student of the Beta Class. Course of study: Software Development</dd> <dd>Graduation Date: June 2019 </dd>-->
+<!--  </dl>-->
+<!--    <p><strong>Employment</strong></p>-->
+<!--    <strong>Wal-Mart</strong>-->
+<!--    <ul>-->
+<!--        &lt;!&ndash;<div> Overnight Mod/Remodel Team</div>&ndash;&gt;-->
+<!--        <li> organize and update products and pricing</li>-->
+<!--        <li> remodel entire store</li>-->
+<!--    </ul>-->
+<!--    <strong>Phelp's Security</strong>-->
+<!--    <ul>-->
+<!--        <li>Answer phone</li>-->
+<!--        <li>Create spreadsheets using Excel</li>-->
+<!--        <li>Log incoming and exiting truck</li>-->
+<!--        <li>Distribute check</li>-->
+<!--        <li>Filing</li>-->
+<!--    </ul>-->
+<!--    <strong>Kelly's Educational Services</strong>-->
+<!--    <ul>-->
+<!--        <li>Substitute Teacher</li>-->
+<!--    </ul>-->
+<!--    <p><strong>Volunteer Experience</strong></p>-->
+<!--    <strong>Ida B. Wells Family Art Gallery</strong>-->
+<!--    <ul>-->
+<!--        <li>Bookeeping</li>-->
+<!--        <li>Assist with tours</li>-->
+<!--        <li>Prepare flyers</li>-->
+<!--        <li>Prepare letter</li>-->
+<!--        <li>Answer phones</li>-->
+<!--        <li>Receipt donations</li>-->
+<!--    </ul>-->
+<!--</aside>-->
 
-    <footer>
+<!--    <footer>-->
 
-    </footer>
-    <a href="resume.html"><button id="myBtn" title="Go to top"></button></a>
+<!--    </footer>-->
+<!--    <a href="resume.html"><button id="myBtn" title="Go to top"></button></a>-->
 </div>
 <script src="resume.js"></script>
 </body>

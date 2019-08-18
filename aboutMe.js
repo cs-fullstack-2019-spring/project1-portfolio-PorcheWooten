@@ -73,3 +73,15 @@ $(document).ready(function() {
 
 });
 /*Scroll to top when arrow up clicked END*/
+
+
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Path('#heart-path', {
+    easing: 'easeInOut',
+    duration: 1100
+});
+
+bar.set(2);
+bar.animate(0.8);  // Number from 0.0 to 1.0

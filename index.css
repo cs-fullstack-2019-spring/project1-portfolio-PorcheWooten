@@ -1,37 +1,43 @@
 html {
-    background:  url(https://static1.squarespace.com/static/5808b8cae58c62d48017c814/5808bb82b8a79b2b732327cf/58f2f974197aea53172275e3/1492318918831/Webdesign-Amsterdam-Foto-1.png?format=1500w) no-repeat left fixed;
+    background:  url(https://i.imgur.com/jmMPNUk.gif) no-repeat left fixed;
     /*background-size: cover;*/
 
 }
 
-body {
-    height: 100%;
-}
-
+/*body {*/
+/*    height: 100%;*/
+/*}*/
+/*html {*/
+/*    background-color: grey;*/
+/*}*/
 
 .container{
     display: grid;
     grid-template-areas:
-            ". header header header"
-            ". section section section";
+            ". header"
+            ". section";
             /*" aboutMe resume reflections contact"*/
             /*"footer footer footer footer";*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     /*border: 1px solid black;*/
-    margin-left: 10%;
+    /*margin-left: 10%;*/
 
+}
+.backgroundPic{
+    grid-area: pic;
+    /*border-right: 1px solid black;*/
 }
 
 header{
     grid-area: header;
-    border-bottom: 1px solid yellow;
+    border-bottom: 2px solid darkred;
     text-align: center;
     font-size: 70px;
-    margin-top: 14%;
+    margin-top: 25%;
     /*padding-top: 75px;*/
-    color: red;
-    margin-left: 20%;
-    margin-right: 2%;
+    color: darkblue;
+    /*margin-left: 20%;*/
+    /*margin-right: 2%;*/
     /*padding-right: 5%;*/
     padding-bottom: 5%;
 }
@@ -41,36 +47,36 @@ section{
     /*border-bottom: 1px solid green;*/
     text-align: center;
     font-size: 25px;
-    margin-bottom: 80px;
-    margin-top: 5%;
-    color: red;
-    padding-bottom: 60px;
-    padding-left: 15%;
+    /*margin-bottom: 80px;*/
+    margin-top: 8%;
+    color: darkblue;
+    /*padding-bottom: 60px;*/
+    /*padding-left: 15%;*/
 }
 
-#aboutMe{
-    grid-area: aboutMe;
-    /*border: 1px solid black;*/
-    /*text-align: center;*/
-}
+/*#aboutMe{*/
+/*    grid-area: aboutMe;*/
+/*    !*border: 1px solid black;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
 
-#resume{
-    grid-area: resume;
-    /*border: 1px solid black;*/
-    /*text-align: center;*/
-}
+/*#resume{*/
+/*    grid-area: resume;*/
+/*    !*border: 1px solid black;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
 
-#reflections{
-    grid-area: reflections;
-    /*border: 1px solid black;*/
-    /*text-align: center;*/
-}
+/*#reflections{*/
+/*    grid-area: reflections;*/
+/*    !*border: 1px solid black;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
 
-#contact{
-    grid-area: contact;
-    /*border: 1px solid black;*/
-    /*text-align: center;*/
-}
+/*#contact{*/
+/*    grid-area: contact;*/
+/*    !*border: 1px solid black;*!*/
+/*    !*text-align: center;*!*/
+/*}*/
 
 footer{
     grid-area: footer;
@@ -78,14 +84,18 @@ footer{
     /*text-align: center;*/
 }
 
-#contact,#reflections,#aboutMe,#resume{
-    font-size: 30px;
-    color: red;
+a{
+    font-size: 20px;
+    color: white;
+    /*background-color: darkgrey;*/
     display: inline-block;
     /*border-top: 1px solid darkred;*/
-    padding-top: 5%;
-    padding-left: 15%;
-    text-align: center;
+    /*padding-top: 1%;*/
+    padding-left: 3%;
+    padding-right: 3%;
+    /*padding-bottom: 1%;*/
+    /*text-align: center;*/
+
 }
 
 #signUpBtn{
@@ -108,15 +118,16 @@ footer{
 /*a{*/
     /*color:white;*/
 /*}*/
-a:visited{
-    color: white;
-}
+/*a:visited{*/
+/*    color: darkgrey;*/
+/*}*/
 
 a:hover{
-    color: green;
+    background-color: darkblue;
 }
 
 
 nav{
-    /*background: yellow;*/
+    background: darkred;
+    text-align: right;
 }

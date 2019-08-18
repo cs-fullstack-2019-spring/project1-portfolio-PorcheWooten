@@ -1,155 +1,217 @@
-body{
-    background-color: black;
-}
-.portfolioContainer{
-    display: grid;
-    grid-template-areas:
-            "header header"
-            "pieChart pieChart"
-            "section section";
-            /*"footer footer";*/
-            /*"article article";*/
-    grid-template-columns: 1fr 1fr;
-    /*border:1px solid darkred;*/
-    background-color: black;
-    margin: 30px;
-    border: 1px solid greenyellow;
-}
-
-#pieChart{
-    grid-area: pieChart;
-    /*padding-right: 3%;*/
-    padding-bottom: 15%;
-    /*padding-left: 5%;*/
-
-}
-
-header{
-    grid-area: header;
-    text-align: center;
-    font-size: 100px;
-    color:red;
-    /*background-color: gray;*/
-    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;
-    background-size: cover;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    border: 1px solid greenyellow;
-}
-
-section{
-    grid-area: section;
-    font-size: 30px;
-    /*border-right:1px solid green;*/
-    color:white;
-    padding:65px;
-    border: 1px solid greenyellow;
+a{
+    font-size: 20px;
+    color: white;
     display: inline-block;
-
+    /*border-top: 1px solid darkred;*/
+    /*padding-top: 1%;*/
+    padding-left: 3%;
+    padding-right: 3%;
+    /*padding-bottom: 1%;*/
+    /*margin-bottom: 5%;*/
+}
+nav{
+    background: darkblue;
+    text-align: right;
+}
+.portfolio{
+    font-size: 85px;
+    text-align: center;
+    margin-top: 2%;
+    /*font-family: 'Sofia';*/
+    /*padding-bottom: 5%;*/
+    color: darkred;
+    border-bottom: 2px solid darkblue;
+    border-top: 2px solid darkblue;
+    /*background-color: darkblue;*/
 }
 
-article{
-    grid-area: article;
-    font-size: 30px;
-    /*border:1px solid darkred;*/
-    color:white;
-    padding-left: 60px;
-    padding-right: 60px;
-    border: 1px solid greenyellow;
-}
-/*Create Grid for the clicking game!*/
-.containerCG{
+#workContainer{
     display: grid;
     grid-template-areas:
-            "headerCG headerCG headerCG"
-            "sectionCG navCG articleCG"
-            "asideCG instrument color"
-            "footer footer footer";
+            "progressChart progressChart progressChart"
+            "box1 box2 box3";
     grid-template-columns: 1fr 1fr 1fr;
-    /*border: 1px solid darkred;*/
-    color:white;
-}
-
-#headerCG{
-    grid-area: headerCG;
-    text-align: center;
-    color:white;
-}
-
-.sectionCG{
-    grid-area: sectionCG;
     /*border: 1px solid black;*/
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    margin: 2%;
+    grid-gap: 5%;
+}
+
+.box1{
+    grid-area: box1;
+    border: 1px solid black;
     text-align: center;
-    /*padding-bottom: 10px;*/
-    color:white;
+    background-color: darkred;
+    padding:5%;
+}
+.box2{
+    grid-area: box2;
+    border: 1px solid black;
+    text-align: center;
+}
+.box3{
+    grid-area: box3;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+
+/*body{*/
+/*    background-color: black;*/
+/*}*/
+/*.portfolioContainer{*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            "header header"*/
+/*            "pieChart pieChart"*/
+/*            "section section";*/
+/*            !*"footer footer";*!*/
+/*            !*"article article";*!*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    !*border:1px solid darkred;*!*/
+/*    background-color: black;*/
+/*    margin: 30px;*/
+/*    border: 1px solid greenyellow;*/
+/*}*/
+
+/*#pieChart{*/
+/*    grid-area: pieChart;*/
+/*    !*padding-right: 3%;*!*/
+/*    padding-bottom: 15%;*/
+/*    !*padding-left: 5%;*!*/
 
 }
 
-.navCG{
-    grid-area: navCG;
-    border-top: 1px solid gray;
-    /*border : 1px solid black;*/
-    text-align: center;
-    color:white;
-}
+/*header{*/
+/*    grid-area: header;*/
+/*    text-align: center;*/
+/*    font-size: 100px;*/
+/*    color:red;*/
+/*    !*background-color: gray;*!*/
+/*    background:  url(https://media.giphy.com/media/Y0cKnGMCBTNTi/giphy.gif) no-repeat center center fixed;*/
+/*    background-size: cover;*/
+/*    padding-bottom: 50px;*/
+/*    padding-top: 50px;*/
+/*    border: 1px solid greenyellow;*/
+/*}*/
 
-.articleCG{
-    grid-area: articleCG;
-    /*border: 1px solid black;*/
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-    text-align: center;
-    color:white;
-    /*padding-top: 55px;*/
-    /*padding-left: 45px;*/
+/*section{*/
+/*    grid-area: section;*/
+/*    font-size: 30px;*/
+/*    !*border-right:1px solid green;*!*/
+/*    color:white;*/
+/*    padding:65px;*/
+/*    border: 1px solid greenyellow;*/
+/*    display: inline-block;*/
 
-}
-.asideCG{
-    grid-area: asideCG;
-    text-align: right;
-    color:white;
-}
-#instrument{
-    grid-area: instrument;
-    border: 1px solid gray;
-    text-align: center;
-    color:white;
-}
-#color{
-    grid-area: color;
-    /*border: 1px solid black;*/
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-    text-align: center;
-    color:white;
-}
+/*}*/
 
-footer{
-    grid-area: footer;
-    text-align: center;
-    color:white;
-}
-/*sets background color*/
-.bgCol1{
-    background: red ;
-}
-.bgCol2{
-    background: blue;
-}
-.bgCol3{
-    background: yellow;
-}
+/*article{*/
+/*    grid-area: article;*/
+/*    font-size: 30px;*/
+/*    !*border:1px solid darkred;*!*/
+/*    color:white;*/
+/*    padding-left: 60px;*/
+/*    padding-right: 60px;*/
+/*    border: 1px solid greenyellow;*/
+/*}*/
+/*!*Create Grid for the clicking game!*!*/
+/*.containerCG{*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            "headerCG headerCG headerCG"*/
+/*            "sectionCG navCG articleCG"*/
+/*            "asideCG instrument color"*/
+/*            "footer footer footer";*/
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+/*    !*border: 1px solid darkred;*!*/
+/*    color:white;*/
+/*}*/
 
-.winning{
-    text-align: center;
+/*#headerCG{*/
+/*    grid-area: headerCG;*/
+/*    text-align: center;*/
+/*    color:white;*/
+/*}*/
+
+/*.sectionCG{*/
+/*    grid-area: sectionCG;*/
+/*    !*border: 1px solid black;*!*/
+/*    border-top: 1px solid gray;*/
+/*    border-right: 1px solid gray;*/
+/*    border-bottom: 1px solid gray;*/
+/*    text-align: center;*/
+/*    !*padding-bottom: 10px;*!*/
+/*    color:white;*/
+
+/*}*/
+
+/*.navCG{*/
+/*    grid-area: navCG;*/
+/*    border-top: 1px solid gray;*/
+/*    !*border : 1px solid black;*!*/
+/*    text-align: center;*/
+/*    color:white;*/
+/*}*/
+
+/*.articleCG{*/
+/*    grid-area: articleCG;*/
+/*    !*border: 1px solid black;*!*/
+/*    border-top: 1px solid gray;*/
+/*    border-left: 1px solid gray;*/
+/*    text-align: center;*/
+/*    color:white;*/
+/*    !*padding-top: 55px;*!*/
+/*    !*padding-left: 45px;*!*/
+
+/*}*/
+/*.asideCG{*/
+/*    grid-area: asideCG;*/
+/*    text-align: right;*/
+/*    color:white;*/
+/*}*/
+/*#instrument{*/
+/*    grid-area: instrument;*/
+/*    border: 1px solid gray;*/
+/*    text-align: center;*/
+/*    color:white;*/
+/*}*/
+/*#color{*/
+/*    grid-area: color;*/
+/*    !*border: 1px solid black;*!*/
+/*    border-bottom: 1px solid gray;*/
+/*    border-top: 1px solid gray;*/
+/*    text-align: center;*/
+/*    color:white;*/
+/*}*/
+
+/*footer{*/
+/*    grid-area: footer;*/
+/*    text-align: center;*/
+/*    color:white;*/
+/*}*/
+/*!*sets background color*!*/
+/*.bgCol1{*/
+/*    background: red ;*/
+/*}*/
+/*.bgCol2{*/
+/*    background: blue;*/
+/*}*/
+/*.bgCol3{*/
+/*    background: yellow;*/
+/*}*/
+
+/*.winning{*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
+
+/*!*TIC TAC TOE GAME!!!*!*/
+/*!*player 1 score display*!*/
+p{
     color: white;
 }
-
-/*TIC TAC TOE GAME!!!*/
-/*player 1 score display*/
 .display{
     text-align: center;
     font-size:800%;
@@ -177,17 +239,17 @@ td{
 }
 h1{
     text-align: center;
-    color:white;
+    color: white;
 }
 .vertical{
-    border-left: 1px solid gold;
-    border-right: 1px solid gold;
+    border-left: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
     color:white;
 }
 
 .horizontal{
-    border-top: 1px solid gold;
-    border-bottom: 1px solid gold;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
 }
 table{
     margin: auto;
@@ -195,190 +257,190 @@ table{
 }
 /*Add the necessary code to display a grey border around a game square when the mouse pointer hovers over it (HINT: CSS)*/
 td:hover{
-    border: 2px solid gray;
+    border: 2px solid darkblue;
 }
 
-/*NAVIGATIION WINDOW*/
-#menuToggle
-{
-    display: block;
-    position: relative;
-    top: 20px;
-    left: 20px;
+/*!*NAVIGATIION WINDOW*!*/
+/*#menuToggle*/
+/*{*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    top: 20px;*/
+/*    left: 20px;*/
 
-    z-index: 1;
+/*    z-index: 1;*/
 
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-
-#menuToggle input
-{
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-
-    cursor: pointer;
-
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-
-    -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-    display: block;
-    width: 33px;
-    height: 5px;
-    margin-bottom: 7px;
-    position: relative;
-
-    background:red;
-    border-radius: 3px;
-
-    z-index: 1;
-
-    transform-origin: 4px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-    transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: green;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 90px;
-
-    background: darkred;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-    padding: 10px 0;
-    font-size: 30px;
-    text-align: center;
-    color: green;
-    padding-bottom: 30px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-    transform: none;
-}
-
-#myBtn {
-    /*display: none; !* Hidden by default *!*/
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: 1px solid red; /* Remove borders */
-    /*outline: none; !* Remove outline *!*/
-    background-image: url("https://i.imgur.com/uIdT3WK.png");
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 26px;
-    padding-bottom: 25px;
-    padding-right: 35px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    opacity: 0.5;
-}
-
-/*changes font color of links*/
-a:visited{
-    color: darkred;
-}
-
-a:hover{
-    color: green;
-}
+/*    -webkit-user-select: none;*/
+/*    user-select: none;*/
+/*}*/
 
 
-/*Back To Top */
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
+/*#menuToggle input*/
+/*{*/
+/*    display: block;*/
+/*    width: 40px;*/
+/*    height: 32px;*/
+/*    position: absolute;*/
+/*    top: -7px;*/
+/*    left: -5px;*/
 
-#clickGame{
-    margin-left:30%;
-}
+/*    cursor: pointer;*/
 
-.click{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-left: 10%;
- }
+/*    opacity: 0; !* hide this *!*/
+/*    z-index: 2; !* and place it over the hamburger *!*/
+
+/*    -webkit-touch-callout: none;*/
+/*}*/
+
+/*!**/
+/* * Just a quick hamburger*/
+/* *!*/
+/*#menuToggle span*/
+/*{*/
+/*    display: block;*/
+/*    width: 33px;*/
+/*    height: 5px;*/
+/*    margin-bottom: 7px;*/
+/*    position: relative;*/
+
+/*    background:red;*/
+/*    border-radius: 3px;*/
+
+/*    z-index: 1;*/
+
+/*    transform-origin: 4px 0px;*/
+
+/*    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),*/
+/*    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),*/
+/*    opacity 0.55s ease;*/
+/*}*/
+
+/*#menuToggle span:first-child*/
+/*{*/
+/*    transform-origin: 0% 0%;*/
+/*}*/
+
+/*#menuToggle span:nth-last-child(2)*/
+/*{*/
+/*    transform-origin: 0% 100%;*/
+/*}*/
+
+/*!**/
+/* * Transform all the slices of hamburger*/
+/* * into a crossmark.*/
+/* *!*/
+/*#menuToggle input:checked ~ span*/
+/*{*/
+/*    opacity: 1;*/
+/*    transform: rotate(45deg) translate(-2px, -1px);*/
+/*    background: green;*/
+/*}*/
+
+/*!**/
+/* * But let's hide the middle one.*/
+/* *!*/
+/*#menuToggle input:checked ~ span:nth-last-child(3)*/
+/*{*/
+/*    opacity: 0;*/
+/*    transform: rotate(0deg) scale(0.2, 0.2);*/
+/*}*/
+
+/*!**/
+/* * Ohyeah and the last one should go the other direction*/
+/* *!*/
+/*#menuToggle input:checked ~ span:nth-last-child(2)*/
+/*{*/
+/*    transform: rotate(-45deg) translate(0, -1px);*/
+/*}*/
+
+/*!**/
+/* * Make this absolute positioned*/
+/* * at the top left of the screen*/
+/* *!*/
+/*#menu*/
+/*{*/
+/*    position: absolute;*/
+/*    width: 200px;*/
+/*    height: 300px;*/
+/*    margin: -100px 0 0 -50px;*/
+/*    padding: 50px;*/
+/*    padding-top: 90px;*/
+
+/*    background: darkred;*/
+/*    list-style-type: none;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*    !* to stop flickering of text in safari *!*/
+
+/*    transform-origin: 0% 0%;*/
+/*    transform: translate(-100%, 0);*/
+
+/*    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+/*}*/
+
+/*#menu li*/
+/*{*/
+/*    padding: 10px 0;*/
+/*    font-size: 30px;*/
+/*    text-align: center;*/
+/*    color: green;*/
+/*    padding-bottom: 30px;*/
+/*}*/
+
+/*!**/
+/* * And let's slide it in from the left*/
+/* *!*/
+/*#menuToggle input:checked ~ ul*/
+/*{*/
+/*    transform: none;*/
+/*}*/
+
+/*#myBtn {*/
+/*    !*display: none; !* Hidden by default *!*!*/
+/*    position: fixed; !* Fixed/sticky position *!*/
+/*    bottom: 20px; !* Place the button at the bottom of the page *!*/
+/*    right: 30px; !* Place the button 30px from the right *!*/
+/*    z-index: 99; !* Make sure it does not overlap *!*/
+/*    border: 1px solid red; !* Remove borders *!*/
+/*    !*outline: none; !* Remove outline *!*!*/
+/*    background-image: url("https://i.imgur.com/uIdT3WK.png");*/
+/*    color: white; !* Text color *!*/
+/*    cursor: pointer; !* Add a mouse pointer on hover *!*/
+/*    padding: 26px;*/
+/*    padding-bottom: 25px;*/
+/*    padding-right: 35px; !* Some padding *!*/
+/*    border-radius: 10px; !* Rounded corners *!*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*!*changes font color of links*!*/
+/*a:visited{*/
+/*    color: darkred;*/
+/*}*/
+
+/*a:hover{*/
+/*    color: green;*/
+/*}*/
+
+
+/*!*Back To Top *!*/
+/*#myBtn:hover {*/
+/*    background-color: #555; !* Add a dark-grey background on hover *!*/
+/*}*/
+
+/*#clickGame{*/
+/*    margin-left:30%;*/
+/*}*/
+
+/*.click{*/
+/*    font-size: 30px;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    margin-left: 10%;*/
+/* }*/
 
 
 
-/*Chart percentage bar*/
+/*!*Chart percentage bar*!*/
 
 .container{
     width: 1000px;

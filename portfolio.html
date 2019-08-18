@@ -6,103 +6,123 @@
     <link rel="stylesheet" href="portfolio.css">
     <script src="jquery-3.3.1.js"></script>
 
+
 </head>
 <body>
+<nav>
+    <a href="index.html"><div id="home">Home</div></a>
 
-<div class="portfolioContainer" >
+    <a href="resume.html"> <div id="resume">Resume</div></a>
 
-    <header><span style="background-color: #000000">Portfolio</span>
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
+    <a href="aboutMe.html"><div id="aboutMe">About</div></a>
 
-            <!--
-            Some spans to act as a hamburger.
+    <a href="contact.html"><div id="contact">Contact </div></a>
+</nav>
 
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
-            <span></span>
-            <span></span>
-            <span></span>
+<div class="portfolio">The Art Of Me</div>
+<div id="workContainer">
 
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <ul id="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="aboutMe.html"><li>About Me</li></a>
-                <a href="resume.html"><li>Resume</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <div class="box1">
+        <h1>Tic Tac Toe 9001</h1>
+        <p>Here is a game of Tic Tac Toe created with code one. Using html, css, and js.</p>
+        <table>
+            <tr>
+                <td></td>
+                <td class="vertical"></td>
+                <td></td>
+            </tr>
 
-    <div id="pieChart">
-        <div class="pieChartHeader">
-            Langauges
-        </div>
-        <div class="container" >
-            <div class="box">
-                <div class="chart" data-percent="75">Javascript</div>
-            </div>
-            <div class="box">
-                <div class="chart" data-percent="75">Python</div>
-            </div>
-            <div class="box">
-                <div class="chart" data-percent="80">MERN</div>
-            </div>
-            <div class="box">
-                <div class="chart" data-percent="82">DJango</div>
-            </div>
-        </div>
-    </div>
-<section>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://i.imgur.com/VzdT4WQ.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">The Clicking Game</h5>
+            <tr>
+                <td class="horizontal"></td>
+                <td class="vertical horizontal"></td>
+                <td class="horizontal"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="vertical"></td>
+                <td></td>
+            </tr>
+
+        </table>
+        <button type="button" id="reset">New Game</button></div>
+
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+</div>
+<!--<div class="portfolioContainer" >-->
+
+<!--    <header><span style="background-color: #000000">Portfolio</span>-->
+<!--    <nav role="navigation">-->
+<!--        <div id="menuToggle">-->
+<!--            &lt;!&ndash;-->
+<!--            A fake / hidden checkbox is used as click reciever,-->
+<!--            so you can use the :checked selector on it.-->
+<!--            &ndash;&gt;-->
+<!--            <input type="checkbox" />-->
+
+<!--            &lt;!&ndash;-->
+<!--            Some spans to act as a hamburger.-->
+
+<!--            They are acting like a real hamburger,-->
+<!--            not that McDonalds stuff.-->
+<!--            &ndash;&gt;-->
+<!--            <span></span>-->
+<!--            <span></span>-->
+<!--            <span></span>-->
+
+<!--            &lt;!&ndash;-->
+<!--            Too bad the menu has to be inside of the button-->
+<!--            but hey, it's pure CSS magic.-->
+<!--            &ndash;&gt;-->
+<!--            <ul id="menu">-->
+<!--                <a href="index.html"><li>Home</li></a>-->
+<!--                <a href="aboutMe.html"><li>About Me</li></a>-->
+<!--                <a href="resume.html"><li>Resume</li></a>-->
+<!--                <a href="contact.html"><li>Contact</li></a>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
+
+<!--    <div id="pieChart">-->
+<!--        <div class="pieChartHeader">-->
+<!--            Langauges-->
+<!--        </div>-->
+<!--        <div class="container" >-->
+<!--            <div class="box">-->
+<!--                <div class="chart" data-percent="75">Javascript</div>-->
+<!--            </div>-->
+<!--            <div class="box">-->
+<!--                <div class="chart" data-percent="75">Python</div>-->
+<!--            </div>-->
+<!--            <div class="box">-->
+<!--                <div class="chart" data-percent="80">MERN</div>-->
+<!--            </div>-->
+<!--            <div class="box">-->
+<!--                <div class="chart" data-percent="82">DJango</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--<section>-->
+<!--    <div class="card" style="width: 18rem;">-->
+<!--        <img class="card-img-top" src="https://i.imgur.com/VzdT4WQ.png" alt="Card image cap">-->
+<!--        <div class="card-body">-->
+<!--            <h5 class="card-title">The Clicking Game</h5>-->
 <!--            <p class="card-text"></p>-->
 <!--            <p class="card-text"></p>-->
-            <hr/>
-        </div>
-    </div>
+<!--            <hr/>-->
+<!--        </div>-->
+<!--    </div>-->
 
 
 
-   <img id="clickGame" src="https://i.imgur.com/VzdT4WQ.png">
-<!--    <a href="project.html"><div class="click">Click here</div></a>-->
-</section>
+<!--   <img id="clickGame" src="https://i.imgur.com/VzdT4WQ.png">-->
+<!--&lt;!&ndash;    <a href="project.html"><div class="click">Click here</div></a>&ndash;&gt;-->
+<!--</section>-->
 
-<article>
-    <h1>Tic Tac Toe 9001</h1>
-    <table>
-        <tr>
-            <td></td>
-            <td class="vertical"></td>
-            <td></td>
-        </tr>
+<!--<article>-->
 
-        <tr>
-            <td class="horizontal"></td>
-            <td class="vertical horizontal"></td>
-            <td class="horizontal"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="vertical"></td>
-            <td></td>
-        </tr>
-
-    </table>
-    <button type="button" id="reset">New Game</button>
-</article>
+<!--</article>-->
 
 <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
 <script src="jquery.easypiechart.js"></script>
@@ -114,8 +134,8 @@
         });
     </script>
 <script src="portfolio.js"></script>
-</div>
-<a href="portfolio.html"><button id="myBtn" title="Go to top"></button></a>
+<!--</div>-->
+<!--<a href="portfolio.html"><button id="myBtn" title="Go to top"></button></a>-->
 
 
 
